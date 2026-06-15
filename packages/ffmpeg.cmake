@@ -56,8 +56,9 @@ ExternalProject_Add(ffmpeg
         --prefix=${MINGW_INSTALL_PREFIX}
         --arch=${TARGET_CPU}
         --target-os=mingw32
-        --pkg-config-flags=--static
         --enable-cross-compile
+        --enable-shared
+        --disable-static
         --enable-runtime-cpudetect
         --enable-gpl
         --enable-version3
